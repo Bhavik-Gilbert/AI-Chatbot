@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "machinelearningcamp",
+  "private_key_id": "c0893451dc17e426c12c9f3b6356f456d34c315a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCQc1GQ75Z0EJK8\n8wDDyYCooAFgDOlVqkqadrVDOiYpOfMmzGV3sY9Hl8xgpCrZxIWJq9DBvU3Neq9V\nyZDmQAseCil9clVmcokZKKFol8MdN+nUugPyH80wkK5tjunMwuNYwMfr79+C+vuI\nkW9cx8hNEzbL8xTZXEVKMw4EJmP27QCOdFHRdcyOV4pRcm4j8SI/DMICcOeRsONF\n+0Ugj6DAzmVqrnpinG9cMizguEY6B6C1ikXj6SI63AxY3jJZCt8DO6qjvf5wFgf9\nxujif89me+EiQ3xoQtHqi7AkufhHuO3AHgshPs1xeL0DvcE0R1zWcz1bwrbJXzrD\nuiiAwgThAgMBAAECggEADOtbeLiM/s16qk6bm2c6zBofdV1CQ0irSnxiguRBBH/r\n2OUAED//vhn8DAqy0G5MuT72OVW6jy2xX91aydUhiWrEQjWHINYOoALryMSGDWdy\nUPXgI3gnrHfMOf1FuOwXVFlNqDL4jSjwdUr4qFYv+oDE7mHL1BL2GYhOcR2T5EI0\n2r5i7z3rHH8tjYVVP0VYDCOewoHjQ67SPi55aMLVdrIprjjgccOiUKuFfcjQORD4\n22RMcG7BIngqjhRmubRDXQQCQgzIHKCnaDlqWKIGp7V/LlYmrRJzUFyIe5hCZzgv\noosowz9+6FCRFkdTj+IjXjtpN5MOBVA1+lJPf3K/IQKBgQDDod95wu4KZ9ldwXFN\nJKFJvCgdMXZEwMAlnJn2dJA74DFOI48dc3zzB/q/2KngAFBJjuIsGtXdZdl7WCN0\nkPknswU1nS+U4GJ2LZKiutxzruq7LqNTZui7FKDSZ+q4z5rXG024I789Rlgq3n5N\nAQm5kft1qJznKKzOpu2Uvqq4aQKBgQC9BkudhuH5pJdfTdH4YAwzjV4mzxKfml1t\nzVY7VeHQ/j3R1wG47c8vn2jsnTbdHRQstHvdkdFyrk0NglCIXNN/knOAqZIjtRjq\nXoxXXFDHRyQvMjgPiHnu4aEE0ifuBD6LkrgzyeKcYkSQL9fBRu3rk6j1zJkm8ICp\n+fpKcEyZuQKBgB8JJift+c+izAQotS3U2tWUyRRgjW+42ILfBjnoIh2tooTP9Vtp\nv+/aWzhmSgTkZ9hTl6QBmd4m00rTH8TVXwGiT/hCeJL4ygYPkszIMkMUA98wNe78\nS32qdx0KKV2qadkoVrsYyLUS3NfoNkdHG+DZvPfciQ/PDyM1rklDulfJAoGAZSow\nX/+ng5d+WEhq/vZQsWqQoE6lFfxk0nZaF2mQcO0RIvRifJnyD/fODQzbJx4ABSkX\nPe9j3G/C118OQN0FaLp1zL90cl3jFtRBYiQLK4w8pnHHJTESqTHinpTnP/DPlJ2S\nrkz3VmEVduHUJCIVBcbCX8L/mKKRCee6+AoARSkCgYAJAUtYEzM+Ab+atI72LojO\nhz2tmNqj6DS9ZdLR4xFWYFs5GqD4Lr+QotwEl/Gv6QJ3j15virIwmA1i6LvWdkjx\nFFdMEcsGQ7GObsnsik4NAwodBNn1NpUDr8KJnWzp1pbnf0oPuXOcbgAxzV5XWv9i\nadloz1KBPvpb/VYjkkEHZQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "student@machinelearningcamp.iam.gserviceaccount.com",
+  "client_id": "118369523341082910998",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/student%40machinelearningcamp.iam.gserviceaccount.com"
+}

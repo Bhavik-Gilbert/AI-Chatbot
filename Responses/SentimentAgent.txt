@@ -1,0 +1,3 @@
+sentence:sentence
+what does this mean:what does this mean
+sentiment:sentiment

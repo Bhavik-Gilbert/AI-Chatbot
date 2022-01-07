@@ -1,0 +1,4 @@
+entity:entity
+person:person
+thing:thing
+tell me about this:tell me about this
