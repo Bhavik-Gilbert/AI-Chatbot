@@ -1,2 +1,6 @@
-hello:hello
-what is your name?:i don't have a name
+hello:Hi
+hi:Hello
+what is your name:I don't have a name
+bye:Goodbye
+what are you:I am a chatbot with many features
+who made you:I am made by a programmer, not too sure who
