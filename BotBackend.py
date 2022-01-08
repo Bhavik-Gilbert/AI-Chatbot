@@ -86,10 +86,10 @@ class ChatBot:
     def add_agent(self, agent):
         self.agents.append(agent)
 
-    def get_response(self, text):
+    def get_response(self, text, data):
         for agent in self.agents:
             if agent.can_handle(text):
-                return agent.get_response(text)
+                return agent.get_response(text, data)
 
         return "I'm sorry I don't understand " + text
 
@@ -108,7 +108,7 @@ class ConditionalAgent(Agent):
         except:
           return False
     
-    def get_response(self, text):
+    def get_response(self, text, file_path = ""):
         return self.conditional_responses[text.lower()]
 
 #trains digit model and returns number analysed in images
@@ -153,9 +153,8 @@ class DigitRecognitionAgent(Agent):
           return False
 
     #returns number analysed if image size can be reshaped
-    def get_response(self, text):
+    def get_response(self, text, file_path = ""):
           try:
-            file_path = input("File Path: ")
             file_path = self.image_path + file_path
             #making image into an array
             test_image = np.invert(Image.open(file_path).convert("L"))
@@ -184,8 +183,7 @@ class LandmarkDetectionAgent(Agent):
         except:
           return False
     
-    def get_response(self, text):
-            file_path = input("File Path: ")
+    def get_response(self, text, file_path = ""):
             file_path = self.image_path + file_path
             try:
               with io.open(file_path, "rb") as image_file:
@@ -220,8 +218,7 @@ class SentimentAnalysisAgent(Agent):
         except:
           return False
     
-    def get_response(self, text):
-            user_input = input("Sentence: ")
+    def get_response(self, text, user_input = ""):
             document = types.Document(content=user_input, type=enums.Document.Type.PLAIN_TEXT)
             #using language library to analyse text
             response = self.client.analyze_sentiment(document=document, encoding_type="UTF32")
@@ -251,8 +248,7 @@ class CatOrDogAgent(Agent):
         except:
           return False
     
-    def get_response(self, text):
-            file_path = input("File Path: ")
+    def get_response(self, text, file_path = ""):
             file_path = self.image_path + file_path
             #makes image into an array and determines input/output size
             data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
@@ -288,8 +284,7 @@ class EntityAnalysisAgent(Agent):
         except:
           return False
     
-    def get_response(self, text):
-            user_input = input("Sentence: ")
+    def get_response(self, text, user_input = ""):
             document = types.Document(content=user_input, type=enums.Document.Type.PLAIN_TEXT)
             #uses language module to analyse text
             response = client.analyze_entities(document=document, encoding_type="UTF32")
@@ -329,6 +324,8 @@ chatbot.add_agent(entity_agent)
 bots = [["Digit Recognition Agent" , response_folder + "DigitAgent.txt"], ["Landmark Detection Agent", response_folder + "LandmarkAgent.txt"], 
         ["Sentiment Analysis Agent", response_folder + "SentimentAgent.txt"], ["Cat Or Dog Agent", response_folder + "CatOrDogAgent.txt"],
         ["Entity Analysis Agent", response_folder + "EntityAgent.txt"]]
+
+image_bots["Digit Recognition Agent", "Landmark Detection Agent", "Cat Or Dog Agent"]
 
 while True:
     print("Hi, what would you like me to do?")

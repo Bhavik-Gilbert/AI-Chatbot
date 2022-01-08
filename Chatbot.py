@@ -3,6 +3,7 @@ import tkinter as tk
 from BotBackend import chatbot
 from BotBackend import read_dictionary
 from BotBackend import bots
+from BotBackend import image_bots
 
 root = tk.Tk()
 
@@ -10,10 +11,18 @@ canvas = tk.Canvas(root, width = 400, height = 300)
 canvas.pack()
 
 question = tk.Label(root, text='Hi, what would you like me to do?')
-question.config(font=('helvetica', 14))
+question.config(font=('helvetica', 12))
 canvas.create_window(200, 25, window=question)
 
 entry = tk.Entry(root)
+canvas.create_window(20)
+
+label = tk.Label(root, text="enter filename or sentence to be analysed\nleave blank for text response")
+label.config(font=('helvetica', 12))
+canvas.create_window(200, 100, window=label)
+
+
+data = tk.Entry(root)
 canvas.create_window(20)
 
 button = tk.Button(text='Submit', command=getResponse, font=('helvetica', 9, 'bold'))
@@ -40,7 +49,7 @@ def quit():
 def getCommands():
     for agents in bots:
       label = tk.Label(root, text=agents[0] + "'s trigger words =>")
-      label.config(font=('helvetica', 14))
+      label.config(font=('helvetica', 12))
       canvas.create_window(200, 25, window=label)
       
       commands = read_dictionary(agents[1])
