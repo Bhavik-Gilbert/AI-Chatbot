@@ -10,11 +10,11 @@
 
 
 #checking for installation of required google libraries
-try:
-  !pip install --upgrade google-cloud-vision==2.4.1 
-  !pip install --upgrade google-cloud-language
-except:
-  pass
+#try:
+  #pip install --upgrade google-cloud-vision==2.4.1 
+  #pip install --upgrade google-cloud-language
+#except:
+  #pass
 
 
 #importing required libraries
